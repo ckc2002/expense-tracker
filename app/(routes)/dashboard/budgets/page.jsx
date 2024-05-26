@@ -3,7 +3,7 @@ import BudgetList from './_components/BudgetList'
 
 const Budget = () => {
     return (
-        <div className='p-5'>
+        <div className='p-5 overflow-auto custom-height'>
             <h2 className='font-bold text-3xl'>My Budget</h2>
             <BudgetList />
         </div>

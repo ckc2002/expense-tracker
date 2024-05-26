@@ -94,7 +94,7 @@ const ExpensesSingle = ({ params }) => {
 
 
     return (
-        <div className='p-5'>
+        <div className='p-5 overflow-auto custom-height'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-2xl font-bold flex items-center gap-2'>
                     <ArrowLeft onClick={() => route.back()} className='cursor-pointer' />
@@ -132,7 +132,7 @@ const ExpensesSingle = ({ params }) => {
                         </div>
                 }
 
-                <AddExpense budgetId={params.id} refreshData={getBudgetInfo} />
+                <AddExpense budgetId={params.id} budgetInfo={budgetInfo} refreshData={getBudgetInfo} />
             </div>
 
             {

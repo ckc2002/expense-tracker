@@ -24,9 +24,13 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#7F57F1",
+          DEFAULT: "#649DAD",
           foreground: "hsl(var(--primary-foreground))",
         },
+        customColor: {
+          100: "#dfecf0"
+        },
+        
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -71,6 +75,11 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['hover'],
     },
   },
   plugins: [require("tailwindcss-animate")],

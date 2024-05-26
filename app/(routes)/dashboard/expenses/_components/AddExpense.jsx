@@ -8,12 +8,16 @@ import moment from 'moment'
 import React, { useState } from 'react'
 import { toast } from 'sonner'
 
-const AddExpense = ({ budgetId, refreshData }) => {
+const AddExpense = ({ budgetId, budgetInfo, refreshData }) => {
 
     const [name, setName] = useState('')
     const [amount, setAmount] = useState('')
 
     const addNewExpense = async () => {
+        if (budgetInfo.totalSpend + parseInt(amount) > budgetInfo.amount) {
+            return toast('You are exceeding your budget limit!')
+
+        }
         try {
             const result = await db.insert(Expenses).values({
                 name: name,

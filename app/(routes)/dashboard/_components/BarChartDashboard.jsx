@@ -16,8 +16,8 @@ const BarChartDashboard = ({ budgetList }) => {
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="totalSpend" stackId={"a"} fill="#7f57f1" />
-                    <Bar dataKey="amount" stackId={"a"} fill="#c8baf2" />
+                    <Bar dataKey="totalSpend" stackId={"a"} fill="#649DAD" />
+                    <Bar dataKey="amount" stackId={"a"} fill="#bfd9e0" />
                 </BarChart>
             </ResponsiveContainer>
         </div>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <section className="bg-gray-50 flex items-center flex-col">
+        <section className="bg-gray-50 flex items-center flex-col mb-4">
             <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex">
                 <div className="mx-auto max-w-xl text-center">
                     <h1 className="text-3xl font-extrabold sm:text-5xl">
@@ -27,8 +27,8 @@ const Hero = () => {
                 </div>
             </div>
 
-            <Image src={"/dashboard-img.jpg"} alt="dashboard"
-                width={1000}
+            <Image src={"/dashboard-img.png"} alt="dashboard"
+                width={1200}
                 height={700}
                 className="-mt-9 rounded-xl border-2"
             />

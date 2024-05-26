@@ -60,7 +60,7 @@ const Dashboard = () => {
     }, [user])
 
     return (
-        <div className='p-5'>
+        <div className='p-5 h-custom-height overflow-auto custom-height' >
             <h2 className='font-bold text-3xl'>Hi, {user?.fullName} ✌️</h2>
             <p className='text-gray-500'>Here's what happening with your money, Lets Manage your expense</p>
 

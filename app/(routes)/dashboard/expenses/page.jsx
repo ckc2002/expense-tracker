@@ -36,7 +36,7 @@ const ExpensesListPage = () => {
     }, [user])
 
     return (
-        <div className='p-5'>
+        <div className='p-5 overflow-auto custom-height' >
             <h2 className='font-bold text-3xl'>My Expenses</h2>
             <ExpensesListTable expensesList={expensesList} refreshData={getAllExpenses} title={false} />
             {/* <BudgetList /> */}
