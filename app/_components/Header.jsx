@@ -9,8 +9,6 @@ import Logo from "../../public/logo1.png"
 
 const Header = () => {
 
-    // const { isLoaded, userId, sessionId, getToken } = useAuth();
-    // const user = useUser();
     const { isSignedIn, user, isLoaded } = useUser();
 
     return (
