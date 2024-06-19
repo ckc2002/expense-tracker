@@ -80,6 +80,7 @@ const ExpensesSingle = ({ params }) => {
                     .where(eq(Budget.id, params.id))
                     .returning()
             }
+            toast('Expense Deleted!')
             route.replace('/dashboard/budgets')
         } catch (error) {
             console.error('Error deleting budget:', error);
