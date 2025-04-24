@@ -23,6 +23,7 @@ const DashboardLayout = ({ children }) => {
         console.log(result)
     }
 
+    // Just for tesitng purpose 
     useEffect(() => {
         user && checkUserBugets()
     }, [user])
